@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATSU HAMA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Nanum+Gothic&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <br>
+            <a href="index.html"><img class="logo" src="img/logowhite.png" alt="blue velvet catering nyc new york"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"><b>home</b></a></li>
+                    <li><a href="menu.html"><b>menu</b></a></li>
+                    <li><a href="reservation.html"><b>reservation</b></a></li>
+                    <li><a href="delivery.html"><b>delivery</b></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+
+    <section class="deliver-links yellow-bg">
+        <div class="row">
+            <div class="col">
+                <img src="img/food5.png">
+                <a href="katsuhama-deliver.html" class="red-link">Order Katsu Hama</a>
+            </div>
+            <div class="col">
+                <img src="img/food3.png">
+                <a href="katsubox-deliver.html" class="red-link">Order Katsu Box</a>
+            </div>
+            <div class="col">
+                <img src="img/food2.png">
+                <a href="katsuhouse-deliver.html" class="red-link">Order Katsu House</a>
+            </div>
+        </div>
+        <div class="deliver-info yellow-bg">
+            <p><b>Katsu Hama</b>, our main restaurant in Midtown NYC, is renowned for its exquisite Japanese katsu dishes. In addition to our flagship establishment, we've expanded our reach to cater to different preferences with two delivery-only restaurants: <b>Katsu Box</b> and <b>Tokyo Katsu House</b>.</p>
+            <p><b>Katsu Box</b> specializes in our signature katsu bento boxes. </p>
+            <p><b>Tokyo Katsu House</b> delivers our diverse range of katsu plates and flavorful currys straight to your doorstep.</p>
+            <p>Our delivery-only branches ensure that you can enjoy the exceptional taste of <b>Katsu Hama</b> from the comfort of your home.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div  class="row">
+            <div class="col left">
+                <h3>KATSU HAMA</h3>
+                <p>11 E 47th St, New York, NY 10017</p>
+                <p>(212) 758-5909</p>
+                <p>11.30am - 9.00pm</p>
+            </div>
+            <div class="col right">
+                <h3>Get Delivery</h3>
+                <a href="katsuhama-deliver.html">KATSU HAMA</a>
+                <a href="katsubox-deliver.html">KATSU BOX</a>
+                <a href="katsuhouse-deliver.html">TOKYO KATSU HOUSE</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

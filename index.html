@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATSU HAMA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Nanum+Gothic&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <br>
+            <a href="index.html"><img class="logo" src="img/logowhite.png" alt="blue velvet catering nyc new york"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"><b>home</b></a></li>
+                    <li><a href="menu.html"><b>menu</b></a></li>
+                    <li><a href="reservation.html"><b>reservation</b></a></li>
+                    <li><a href="delivery.html"><b>delivery</b></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+
+    <section class="bg1">
+        <div class="text-box">
+            <h4>New Yorks City's Famous</h4>
+            <h1>Authentic Japanese Katsu</h1>
+            <h4>Crispy, Flavorful, Authentic</h4>
+        </div>
+    </section>
+
+    <section class="home-info red-bg">
+        <p>Nestled in the heart of Midtown NYC, Katsu Hama is a distinguished Japanese restaurant that specializes in the art of katsu dishes. With an inviting ambiance, the restaurant offers a relaxed style of dining, inviting you to savor the essence of great Japanese cuisine. From a delectable assortment of katsu plates, bento boxes and flavorful katsu currys, Katsu Hama takes pride in serving premium meats and fish that elevate the dining experience. The menu extends to various appetizers and sides, ensuring a diverse selection to please every palate. Conveniently located on 47th Street between 5th Avenue and Madison Avenue, Katsu Hama stands as a go-to destination for those seeking an authentic Japanese dining experience in the lively atmosphere of Midtown Manhattan.</p>
+    </section>
+
+    <section class="home-imgs yellow-bg">
+        <div class="row">
+            <div class="col">
+                <img src="img/food2.png">
+            </div>
+            <div class="col">
+                <img src="img/vibe1.png">
+            </div>
+            <div class="col">
+                <img src="img/food3.png">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div  class="row">
+            <div class="col left">
+                <h3>KATSU HAMA</h3>
+                <p>11 E 47th St, New York, NY 10017</p>
+                <p>(212) 758-5909</p>
+                <p>11.30am - 9.00pm</p>
+            </div>
+            <div class="col right">
+                <h3>Get Delivery</h3>
+                <a href="katsuhama-deliver.html">KATSU HAMA</a>
+                <a href="katsubox-deliver.html">KATSU BOX</a>
+                <a href="katsuhouse-deliver.html">TOKYO KATSU HOUSE</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
